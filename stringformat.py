@@ -1,4 +1,7 @@
 def print_formatted(n):
+    if n<1 or n>99:
+        print('Error')
+        return
     width = len(bin(n)) - 2  # Width based on the binary representation of n
     for i in range(1, n + 1):
         decimal = str(i).rjust(width)
